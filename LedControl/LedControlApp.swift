@@ -5,15 +5,14 @@
 //  Created by Mihai on 02.02.2025.
 //
 
+import Foundation
 import SwiftUI
 import SwiftData
 
 @main
 struct LedControlApp: App {
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
+        let schema = Schema([HomeSettings.self, PresetsSettings.self])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {
@@ -28,5 +27,6 @@ struct LedControlApp: App {
             ContentView()
         }
         .modelContainer(sharedModelContainer)
+
     }
 }

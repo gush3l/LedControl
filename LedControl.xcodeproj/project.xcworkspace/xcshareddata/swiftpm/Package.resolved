@@ -1,0 +1,15 @@
+{
+  "originHash" : "901182ad6fad7b4cb028ff7ca0b692306bccd36e35bbd4f343d1c3ba6aa4726b",
+  "pins" : [
+    {
+      "identity" : "combinecorebluetooth",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StarryInternet/CombineCoreBluetooth.git",
+      "state" : {
+        "revision" : "72b672e3adfdb0af357bfcebd4ef185429076405",
+        "version" : "0.8.0"
+      }
+    }
+  ],
+  "version" : 3
+}
