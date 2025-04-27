@@ -70,6 +70,24 @@ struct ContentView: View {
             
             NavigationView {
                 BluetoothView()
+                    .navigationTitle("Bluetooth Devices")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: {
+                                showInfoDialog = true
+                            }) {
+                                Image(systemName: "info.circle.fill")
+                                    .font(.title3)
+                            }
+                        }
+                    }
+                    .alert(isPresented: $showInfoDialog) {
+                        Alert(
+                            title: Text("Information"),
+                            message: Text("Connect to a Bluetooth light device to control it. It should use a ELK BLEDOM bluetooth controller."),
+                            dismissButton: .default(Text("Close"))
+                        )
+                    }
             }
             .tabItem {
                 Image(systemName: "lightswitch.on.square")

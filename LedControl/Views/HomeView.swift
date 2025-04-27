@@ -67,7 +67,7 @@ public struct HomeView: View {
                             .font(.subheadline)
                             .foregroundColor(.primary)
                     }.padding(.leading, 7)
-
+                    
                     HStack {
                         TextField("", text: $brightnessText)
                             .frame(width: 40, alignment: .center)
@@ -109,7 +109,7 @@ public struct HomeView: View {
                         color: .red,
                         systemImage: "circle.fill"
                     )
-
+                    
                     ColorSliderView(
                         label: "Green",
                         value: Binding(
@@ -119,7 +119,7 @@ public struct HomeView: View {
                         color: .green,
                         systemImage: "circle.fill"
                     )
-
+                    
                     ColorSliderView(
                         label: "Blue",
                         value: Binding(
@@ -183,7 +183,7 @@ public struct HomeView: View {
             AppState.shared.pickedColor = newColor
             
             print("[DEBUG] Detected color change: \(newColor)")
-//            \nisConnected: \(bluetoothManager.isConnected) \nfoundDevices: \(bluetoothManager.foundDevices.count) \nconnectedPeripherals: \(bluetoothManager.connectedPeripherals.count) \nisDisabled: \(!isLightsOn) || \(!bluetoothManager.isConnected) = \(!isLightsOn || !bluetoothManager.isConnected)")
+            //            \nisConnected: \(bluetoothManager.isConnected) \nfoundDevices: \(bluetoothManager.foundDevices.count) \nconnectedPeripherals: \(bluetoothManager.connectedPeripherals.count) \nisDisabled: \(!isLightsOn) || \(!bluetoothManager.isConnected) = \(!isLightsOn || !bluetoothManager.isConnected)")
             
             if let characteristic = appState.currentCharacteristic {
                 if let rgb = newColor.toUInt8RGB() {
