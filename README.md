@@ -2,6 +2,12 @@
 
 A simple iOS app for controlling Bluetooth LED light strips made using SwiftUI and CoreBluetooth.
 
+## Screenshots
+
+| ![](https://github.com/gush3l/LedControl/blob/master/Screenshots/IMG_4610.PNG?raw=true) | ![](https://github.com/gush3l/LedControl/blob/master/Screenshots/IMG_4611.PNG?raw=true) |
+|:---:|:---:|
+| ![](https://github.com/gush3l/LedControl/blob/master/Screenshots/IMG_4612.PNG?raw=true) | ![](https://github.com/gush3l/LedControl/blob/master/Screenshots/IMG_4613.PNG?raw=true) |
+
 ## Features
 
 - Control RGB colors with sliders
