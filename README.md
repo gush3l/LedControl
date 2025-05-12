@@ -25,7 +25,7 @@ A simple iOS app for controlling Bluetooth LED light strips made using SwiftUI a
 
 ## Getting Started
 
-1. Download and install the app
+1. Compile and install the app
 2. Turn on your LED controller
 3. Open the app - it will try to connect automatically
 4. If no connection happens, go to the Devices tab and tap on your device
